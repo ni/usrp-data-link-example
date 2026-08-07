@@ -1,0 +1,579 @@
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2021.1_AR76780 (lin64) Build 3247384 Thu Jun 10 19:36:07 MDT 2021
+| Date         : Tue Jul  7 11:36:23 2026
+| Host         : precwood running 64-bit Ubuntu 25.10
+| Command      : report_utilization -omit_locs -file /home/wfife/hdd/repos/rfnoc-oot-blocks-dev/build-fpga/build-x420_1000_aurora_C2_UHD_4.10/build.rpt
+| Design       : x4xx
+| Device       : xczu28drffvg1517-1
+| Design State : Physopt postRoute
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Utilization Design Information
+
+Table of Contents
+-----------------
+1. CLB Logic
+1.1 Summary of Registers by Type
+2. CLB Logic Distribution
+3. BLOCKRAM
+4. ARITHMETIC
+5. I/O
+6. CLOCK
+7. ADVANCED
+8. CONFIGURATION
+9. Primitives
+10. Black Boxes
+11. Instantiated Netlists
+
+1. CLB Logic
+------------
+
++----------------------------+--------+------------+-----------+-------+
+|          Site Type         |  Used  | Prohibited | Available | Util% |
++----------------------------+--------+------------+-----------+-------+
+| CLB LUTs                   |  84216 |          0 |    425280 | 19.80 |
+|   LUT as Logic             |  72864 |          0 |    425280 | 17.13 |
+|   LUT as Memory            |  11352 |          0 |    213600 |  5.31 |
+|     LUT as Distributed RAM |   4658 |            |           |       |
+|     LUT as Shift Register  |   6694 |            |           |       |
+| CLB Registers              | 181447 |          0 |    850560 | 21.33 |
+|   Register as Flip Flop    | 181447 |          0 |    850560 | 21.33 |
+|   Register as Latch        |      0 |          0 |    850560 |  0.00 |
+| CARRY8                     |   1169 |          0 |     53160 |  2.20 |
+| F7 Muxes                   |    638 |          0 |    212640 |  0.30 |
+| F8 Muxes                   |    119 |          0 |    106320 |  0.11 |
+| F9 Muxes                   |      0 |          0 |     53160 |  0.00 |
++----------------------------+--------+------------+-----------+-------+
+
+
+1.1 Summary of Registers by Type
+--------------------------------
+
++--------+--------------+-------------+--------------+
+|  Total | Clock Enable | Synchronous | Asynchronous |
++--------+--------------+-------------+--------------+
+| 0      |            _ |           - |            - |
+| 0      |            _ |           - |          Set |
+| 0      |            _ |           - |        Reset |
+| 0      |            _ |         Set |            - |
+| 0      |            _ |       Reset |            - |
+| 0      |          Yes |           - |            - |
+| 2884   |          Yes |           - |          Set |
+| 15178  |          Yes |           - |        Reset |
+| 4055   |          Yes |         Set |            - |
+| 159373 |          Yes |       Reset |            - |
++--------+--------------+-------------+--------------+
+
+
+2. CLB Logic Distribution
+-------------------------
+
++--------------------------------------------+--------+------------+-----------+-------+
+|                  Site Type                 |  Used  | Prohibited | Available | Util% |
++--------------------------------------------+--------+------------+-----------+-------+
+| CLB                                        |  24693 |          0 |     53160 | 46.45 |
+|   CLBL                                     |  12371 |            |           |       |
+|   CLBM                                     |  12322 |            |           |       |
+| LUT as Logic                               |  72864 |          0 |    425280 | 17.13 |
+|   using O5 output only                     |   2287 |            |           |       |
+|   using O6 output only                     |  43215 |            |           |       |
+|   using O5 and O6                          |  27362 |            |           |       |
+| LUT as Memory                              |  11352 |          0 |    213600 |  5.31 |
+|   LUT as Distributed RAM                   |   4658 |            |           |       |
+|     using O5 output only                   |      0 |            |           |       |
+|     using O6 output only                   |    118 |            |           |       |
+|     using O5 and O6                        |   4540 |            |           |       |
+|   LUT as Shift Register                    |   6694 |            |           |       |
+|     using O5 output only                   |      0 |            |           |       |
+|     using O6 output only                   |   6437 |            |           |       |
+|     using O5 and O6                        |    257 |            |           |       |
+| CLB Registers                              | 181447 |          0 |    850560 | 21.33 |
+|   Register driven from within the CLB      |  74483 |            |           |       |
+|   Register driven from outside the CLB     | 106964 |            |           |       |
+|     LUT in front of the register is unused |  91552 |            |           |       |
+|     LUT in front of the register is used   |  15412 |            |           |       |
+| Unique Control Sets                        |   4772 |          0 |    106320 |  4.49 |
++--------------------------------------------+--------+------------+-----------+-------+
+* * Note: Available Control Sets calculated as Slices * 2, Review the Control Sets Report for more information regarding control sets.
+
+
+3. BLOCKRAM
+-----------
+
++-------------------+------+------------+-----------+-------+
+|     Site Type     | Used | Prohibited | Available | Util% |
++-------------------+------+------------+-----------+-------+
+| Block RAM Tile    | 90.5 |          0 |      1080 |  8.38 |
+|   RAMB36/FIFO*    |   84 |          0 |      1080 |  7.78 |
+|     FIFO36E2 only |    8 |            |           |       |
+|     RAMB36E2 only |   76 |            |           |       |
+|   RAMB18          |   13 |          0 |      2160 |  0.60 |
+|     RAMB18E2 only |   13 |            |           |       |
+| URAM              |    4 |          0 |        80 |  5.00 |
++-------------------+------+------------+-----------+-------+
+* Note: Each Block RAM Tile only has one FIFO logic available and therefore can accommodate only one FIFO36E2 or one FIFO18E2. However, if a FIFO18E2 occupies a Block RAM Tile, that tile can still accommodate a RAMB18E2
+
+
+4. ARITHMETIC
+-------------
+
++----------------+------+------------+-----------+-------+
+|    Site Type   | Used | Prohibited | Available | Util% |
++----------------+------+------------+-----------+-------+
+| DSPs           |  560 |          0 |      4272 | 13.11 |
+|   DSP48E2 only |  560 |            |           |       |
++----------------+------+------------+-----------+-------+
+
+
+5. I/O
+------
+
++------------------+------+------------+-----------+-------+
+|     Site Type    | Used | Prohibited | Available | Util% |
++------------------+------+------------+-----------+-------+
+| Bonded IOB       |  132 |          0 |       347 | 38.04 |
+| HPIOB_M          |   39 |          0 |       138 | 28.26 |
+|   INPUT          |    4 |            |           |       |
+|   OUTPUT         |   24 |            |           |       |
+|   BIDIR          |   11 |            |           |       |
+| HPIOB_S          |   48 |          0 |       138 | 34.78 |
+|   INPUT          |    4 |            |           |       |
+|   OUTPUT         |   33 |            |           |       |
+|   BIDIR          |   11 |            |           |       |
+| HDIOB_M          |   18 |          0 |        24 | 75.00 |
+|   INPUT          |    1 |            |           |       |
+|   OUTPUT         |    2 |            |           |       |
+|   BIDIR          |   15 |            |           |       |
+| HDIOB_S          |   16 |          0 |        24 | 66.67 |
+|   INPUT          |    1 |            |           |       |
+|   OUTPUT         |    3 |            |           |       |
+|   BIDIR          |   12 |            |           |       |
+| HPIOB_SNGL       |   11 |          0 |        23 | 47.83 |
+|   INPUT          |    1 |            |           |       |
+|   OUTPUT         |    8 |            |           |       |
+|   BIDIR          |    2 |            |           |       |
+| HPIOBDIFFINBUF   |    3 |          0 |       192 |  1.56 |
+|   DIFFINBUF      |    3 |            |           |       |
+| HPIOBDIFFOUTBUF  |    0 |          0 |       192 |  0.00 |
+| HDIOBDIFFINBUF   |    0 |          0 |        72 |  0.00 |
+| BITSLICE_CONTROL |    0 |          0 |        64 |  0.00 |
+| BITSLICE_RX_TX   |    1 |          0 |      2496 |  0.04 |
+|   OSERDES        |    1 |            |           |       |
+| BITSLICE_TX      |    0 |          0 |        64 |  0.00 |
+| RIU_OR           |    0 |          0 |        32 |  0.00 |
+| HS_ADC           |    0 |          4 |         4 |  0.00 |
+| HS_DAC           |    0 |          4 |         4 |  0.00 |
++------------------+------+------------+-----------+-------+
+
+
+6. CLOCK
+--------
+
++----------------------+------+------------+-----------+-------+
+|       Site Type      | Used | Prohibited | Available | Util% |
++----------------------+------+------------+-----------+-------+
+| GLOBAL CLOCK BUFFERs |   15 |          0 |       696 |  2.16 |
+|   BUFGCE             |    8 |          0 |       216 |  3.70 |
+|   BUFGCE_DIV         |    0 |          0 |        32 |  0.00 |
+|   BUFG_GT            |    4 |          0 |       312 |  1.28 |
+|   BUFG_PS            |    3 |          0 |        72 |  4.17 |
+|   BUFGCTRL*          |    0 |          0 |        64 |  0.00 |
+| PLL                  |    0 |          0 |        16 |  0.00 |
+| MMCM                 |    1 |          0 |         8 | 12.50 |
++----------------------+------+------------+-----------+-------+
+* Note: Each used BUFGCTRL counts as two GLOBAL CLOCK BUFFERs. This table does not include global clocking resources, only buffer cell usage. See the Clock Utilization Report (report_clock_utilization) for detailed accounting of global clocking resource availability.
+
+
+7. ADVANCED
+-----------
+
++-----------------+------+------------+-----------+--------+
+|    Site Type    | Used | Prohibited | Available |  Util% |
++-----------------+------+------------+-----------+--------+
+| CMACE4          |    0 |          0 |         2 |   0.00 |
+| FE              |    0 |          0 |         8 |   0.00 |
+| GTYE4_CHANNEL   |    8 |          0 |        16 |  50.00 |
+| GTYE4_COMMON    |    2 |          0 |         4 |  50.00 |
+| HSADC           |    4 |          0 |         4 | 100.00 |
+| HSDAC           |    2 |          0 |         4 |  50.00 |
+| ILKNE4          |    0 |          0 |         1 |   0.00 |
+| OBUFDS_GTE4     |    1 |          0 |         8 |  12.50 |
+| OBUFDS_GTE4_ADV |    0 |          0 |         8 |   0.00 |
+| PCIE40E4        |    0 |          0 |         2 |   0.00 |
+| PS8             |    1 |          0 |         1 | 100.00 |
+| SYSMONE4        |    0 |          0 |         1 |   0.00 |
++-----------------+------+------------+-----------+--------+
+
+
+8. CONFIGURATION
+----------------
+
++-------------+------+------------+-----------+--------+
+|  Site Type  | Used | Prohibited | Available |  Util% |
++-------------+------+------------+-----------+--------+
+| BSCANE2     |    0 |          0 |         4 |   0.00 |
+| DNA_PORTE2  |    1 |          0 |         1 | 100.00 |
+| EFUSE_USR   |    0 |          0 |         1 |   0.00 |
+| FRAME_ECCE4 |    0 |          0 |         1 |   0.00 |
+| ICAPE3      |    0 |          0 |         2 |   0.00 |
+| MASTER_JTAG |    0 |          0 |         1 |   0.00 |
+| STARTUPE3   |    0 |          0 |         1 |   0.00 |
++-------------+------+------------+-----------+--------+
+
+
+9. Primitives
+-------------
+
++---------------+--------+---------------------+
+|    Ref Name   |  Used  | Functional Category |
++---------------+--------+---------------------+
+| FDRE          | 159373 |            Register |
+| LUT3          |  38892 |                 CLB |
+| LUT6          |  19808 |                 CLB |
+| FDCE          |  15178 |            Register |
+| LUT5          |  13863 |                 CLB |
+| LUT4          |  13318 |                 CLB |
+| LUT2          |  11358 |                 CLB |
+| RAMD32        |   7968 |                 CLB |
+| SRLC32E       |   5284 |                 CLB |
+| FDSE          |   4055 |            Register |
+| LUT1          |   2987 |                 CLB |
+| FDPE          |   2884 |            Register |
+| SRL16E        |   1667 |                 CLB |
+| CARRY8        |   1169 |                 CLB |
+| RAMS32        |   1116 |                 CLB |
+| MUXF7         |    638 |                 CLB |
+| DSP48E2       |    560 |          Arithmetic |
+| MUXF8         |    119 |                 CLB |
+| RAMD64E       |    114 |                 CLB |
+| RAMB36E2      |     76 |            BLOCKRAM |
+| OBUF          |     70 |                 I/O |
+| OBUFT         |     51 |                 I/O |
+| IBUFCTRL      |     50 |              Others |
+| INBUF         |     47 |                 I/O |
+| RAMB18E2      |     13 |            BLOCKRAM |
+| GTYE4_CHANNEL |      8 |            Advanced |
+| FIFO36E2      |      8 |            BLOCKRAM |
+| BUFGCE        |      8 |               Clock |
+| URAM288       |      4 |            BLOCKRAM |
+| HSADC         |      4 |            Advanced |
+| BUFG_GT_SYNC  |      4 |               Clock |
+| BUFG_GT       |      4 |               Clock |
+| INV           |      3 |                 CLB |
+| DIFFINBUF     |      3 |                 I/O |
+| BUFG_PS       |      3 |               Clock |
+| IBUFDS_GTE4   |      2 |                 I/O |
+| HSDAC         |      2 |            Advanced |
+| GTYE4_COMMON  |      2 |            Advanced |
+| USR_ACCESSE2  |      1 |              Others |
+| PS8           |      1 |            Advanced |
+| OSERDESE3     |      1 |                 I/O |
+| OBUFDS_GTE4   |      1 |            Advanced |
+| MMCME4_ADV    |      1 |               Clock |
+| DNA_PORTE2    |      1 |       Configuration |
++---------------+--------+---------------------+
+
+
+10. Black Boxes
+---------------
+
++----------+------+
+| Ref Name | Used |
++----------+------+
+
+
+11. Instantiated Netlists
+-------------------------
+
++-----------------+------+
+|     Ref Name    | Used |
++-----------------+------+
+| fifo_short_2clk |   93 |
+| fifo_4k_2clk    |   32 |
+| aurora_100g     |    2 |
++-----------------+------+
+
+
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version      : Vivado v.2021.1_AR76780 (lin64) Build 3247384 Thu Jun 10 19:36:07 MDT 2021
+| Date              : Tue Jul  7 11:36:27 2026
+| Host              : precwood running 64-bit Ubuntu 25.10
+| Command           : report_timing_summary -no_detailed_paths -file /home/wfife/hdd/repos/rfnoc-oot-blocks-dev/build-fpga/build-x420_1000_aurora_C2_UHD_4.10/build.rpt -append
+| Design            : x4xx
+| Device            : xczu28dr-ffvg1517
+| Speed File        : -1  PRODUCTION 1.29 12-02-2020
+| Temperature Grade : E
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Timing Summary Report
+
+------------------------------------------------------------------------------------------------
+| Timer Settings
+| --------------
+------------------------------------------------------------------------------------------------
+
+  Enable Multi Corner Analysis               :  Yes
+  Enable Pessimism Removal                   :  Yes
+  Pessimism Removal Resolution               :  Nearest Common Node
+  Enable Input Delay Default Clock           :  No
+  Enable Preset / Clear Arcs                 :  No
+  Disable Flight Delays                      :  No
+  Ignore I/O Paths                           :  No
+  Timing Early Launch at Borrowing Latches   :  No
+  Borrow Time for Max Delay Exceptions       :  Yes
+  Merge Timing Exceptions                    :  Yes
+
+  Corner  Analyze    Analyze    
+  Name    Max Paths  Min Paths  
+  ------  ---------  ---------  
+  Slow    Yes        Yes        
+  Fast    Yes        Yes        
+
+
+------------------------------------------------------------------------------------------------
+| Report Methodology
+| ------------------
+------------------------------------------------------------------------------------------------
+
+No report available as report_methodology has not been run prior. Run report_methodology on the current design for the summary of methodology violations.
+
+
+
+check_timing report
+
+Table of Contents
+-----------------
+1. checking no_clock (0)
+2. checking constant_clock (0)
+3. checking pulse_width_clock (0)
+4. checking unconstrained_internal_endpoints (0)
+5. checking no_input_delay (24)
+6. checking no_output_delay (24)
+7. checking multiple_clock (0)
+8. checking generated_clocks (0)
+9. checking loops (0)
+10. checking partial_input_delay (0)
+11. checking partial_output_delay (2)
+12. checking latch_loops (0)
+
+1. checking no_clock (0)
+------------------------
+ There are 0 register/latch pins with no clock.
+
+
+2. checking constant_clock (0)
+------------------------------
+ There are 0 register/latch pins with constant_clock.
+
+
+3. checking pulse_width_clock (0)
+---------------------------------
+ There are 0 register/latch pins which need pulse_width check
+
+
+4. checking unconstrained_internal_endpoints (0)
+------------------------------------------------
+ There are 0 pins that are not constrained for maximum delay.
+
+ There are 0 pins that are not constrained for maximum delay due to constant clock.
+
+
+5. checking no_input_delay (24)
+-------------------------------
+ There are 0 input ports with no input delay specified.
+
+ There are 24 input ports with no input delay but user has a false path constraint. (MEDIUM)
+
+
+6. checking no_output_delay (24)
+--------------------------------
+ There are 0 ports with no output delay specified.
+
+ There are 24 ports with no output delay but user has a false path constraint (MEDIUM)
+
+ There are 0 ports with no output delay but with a timing clock defined on it or propagating through it
+
+
+7. checking multiple_clock (0)
+------------------------------
+ There are 0 register/latch pins with multiple clocks.
+
+
+8. checking generated_clocks (0)
+--------------------------------
+ There are 0 generated clocks that are not connected to a clock source.
+
+
+9. checking loops (0)
+---------------------
+ There are 0 combinational loops in the design.
+
+
+10. checking partial_input_delay (0)
+------------------------------------
+ There are 0 input ports with partial input delay specified.
+
+
+11. checking partial_output_delay (2)
+-------------------------------------
+ There are 2 ports with partial output delay specified. (HIGH)
+
+
+12. checking latch_loops (0)
+----------------------------
+ There are 0 combinational latch loops in the design through latch input
+
+
+
+------------------------------------------------------------------------------------------------
+| Design Timing Summary
+| ---------------------
+------------------------------------------------------------------------------------------------
+
+    WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
+    -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
+      0.010        0.000                      0               545523        0.006        0.000                      0               544105        0.078        0.000                       0                199041  
+
+
+All user specified timing constraints are met.
+
+
+------------------------------------------------------------------------------------------------
+| Clock Summary
+| -------------
+------------------------------------------------------------------------------------------------
+
+Clock                                                Waveform(ns)             Period(ns)      Frequency(MHz)
+-----                                                ------------             ----------      --------------
+Dram0SysClock                                        {0.000 4.998}            9.996           100.040         
+Dram1SysClock                                        {0.000 4.998}            9.996           100.040         
+RFADC0_CLK                                           {0.000 25.000}           50.000          20.000          
+RFADC0_CLK_dummy                                     {0.000 25.000}           50.000          20.000          
+RFADC1_CLK                                           {0.000 25.000}           50.000          20.000          
+RFADC1_CLK_dummy                                     {0.000 25.000}           50.000          20.000          
+RFADC2_CLK                                           {0.000 25.000}           50.000          20.000          
+RFADC2_CLK_dummy                                     {0.000 25.000}           50.000          20.000          
+RFADC3_CLK                                           {0.000 25.000}           50.000          20.000          
+RFADC3_CLK_dummy                                     {0.000 25.000}           50.000          20.000          
+RFDAC0_CLK                                           {0.000 1.563}            3.125           320.000         
+RFDAC1_CLK                                           {0.000 1.563}            3.125           320.000         
+async_in_clk                                         {0.000 25.000}           50.000          20.000          
+async_out_clk                                        {0.000 25.000}           50.000          20.000          
+clk100                                               {0.000 5.000}            10.000          100.000         
+clk166                                               {0.000 3.000}            6.000           166.667         
+clk200                                               {0.000 2.500}            5.000           200.000         
+clk40                                                {0.000 12.500}           25.000          40.000          
+mgt_ref_0                                            {0.000 3.200}            6.400           156.250         
+  gt_qpllclk_quad1_out                               {0.000 0.040}            0.080           12500.000       
+    GTYE4_CHANNEL_TXOUTCLKPCS[0]                     {0.000 1.280}            2.560           390.625         
+    GTYE4_CHANNEL_TXOUTCLKPCS[1]                     {0.000 1.280}            2.560           390.625         
+    GTYE4_CHANNEL_TXOUTCLKPCS[2]                     {0.000 1.280}            2.560           390.625         
+    GTYE4_CHANNEL_TXOUTCLKPCS[3]                     {0.000 1.280}            2.560           390.625         
+    rxoutclk_out[0]                                  {0.000 1.280}            2.560           390.625         
+    txoutclk_out[0]                                  {0.000 1.280}            2.560           390.625         
+  gt_qpllrefclk_quad1_out                            {0.000 3.200}            6.400           156.250         
+mgt_ref_1                                            {0.000 5.000}            10.000          100.000         
+mgt_ref_2                                            {0.000 5.200}            10.400          96.154          
+mgt_ref_3                                            {0.000 3.200}            6.400           156.250         
+  gt_qpllclk_quad1_out_1                             {0.000 0.040}            0.080           12500.000       
+    GTYE4_CHANNEL_TXOUTCLKPCS[0]_1                   {0.000 1.280}            2.560           390.625         
+    GTYE4_CHANNEL_TXOUTCLKPCS[1]_1                   {0.000 1.280}            2.560           390.625         
+    GTYE4_CHANNEL_TXOUTCLKPCS[2]_1                   {0.000 1.280}            2.560           390.625         
+    GTYE4_CHANNEL_TXOUTCLKPCS[3]_1                   {0.000 1.280}            2.560           390.625         
+    rxoutclk_out[0]_1                                {0.000 1.280}            2.560           390.625         
+    txoutclk_out[0]_1                                {0.000 1.280}            2.560           390.625         
+  gt_qpllrefclk_quad1_out_1                          {0.000 3.200}            6.400           156.250         
+pll_ref_clk                                          {0.000 7.812}            15.625          64.000          
+  clkfbout_x420_ps_rfdc_bd_data_clock_mmcm_0         {0.000 7.812}            15.625          64.000          
+  pll_ref_clk_out_x420_ps_rfdc_bd_data_clock_mmcm_0  {0.000 7.812}            15.625          64.000          
+  r0_rfdc_clk_x420_ps_rfdc_bd_data_clock_mmcm_0      {0.000 1.563}            3.125           320.000         
+  r1_rfdc_clk_x420_ps_rfdc_bd_data_clock_mmcm_0      {0.000 1.563}            3.125           320.000         
+ref_clk                                              {0.000 20.000}           40.000          25.000          
+virtual_ref_clk                                      {0.000 20.000}           40.000          25.000          
+
+
+------------------------------------------------------------------------------------------------
+| Intra Clock Table
+| -----------------
+------------------------------------------------------------------------------------------------
+
+Clock                                                    WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
+-----                                                    -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
+clk100                                                     7.216        0.000                      0                 1632        0.024        0.000                      0                 1632        3.200        0.000                       0                  1016  
+clk200                                                     0.022        0.000                      0               205105        0.006        0.000                      0               205105        1.000        0.000                       0                 85232  
+clk40                                                     15.744        0.000                      0                51722        0.011        0.000                      0                51722       10.225        0.000                       0                 22998  
+    GTYE4_CHANNEL_TXOUTCLKPCS[0]                           1.478        0.000                      0                   34        0.162        0.000                      0                   34        1.005        0.000                       0                    15  
+    GTYE4_CHANNEL_TXOUTCLKPCS[1]                           1.244        0.000                      0                   34        0.185        0.000                      0                   34        1.005        0.000                       0                    15  
+    GTYE4_CHANNEL_TXOUTCLKPCS[2]                           1.341        0.000                      0                   34        0.132        0.000                      0                   34        1.005        0.000                       0                    15  
+    GTYE4_CHANNEL_TXOUTCLKPCS[3]                           0.989        0.000                      0                   34        0.147        0.000                      0                   34        1.005        0.000                       0                    15  
+    rxoutclk_out[0]                                        0.254        0.000                      0                 4906        0.024        0.000                      0                 4906        0.078        0.000                       0                  2640  
+    txoutclk_out[0]                                        0.142        0.000                      0                25823        0.018        0.000                      0                25823        0.078        0.000                       0                 13333  
+    GTYE4_CHANNEL_TXOUTCLKPCS[0]_1                         1.380        0.000                      0                   34        0.045        0.000                      0                   34        1.005        0.000                       0                    15  
+    GTYE4_CHANNEL_TXOUTCLKPCS[1]_1                         1.344        0.000                      0                   34        0.170        0.000                      0                   34        1.005        0.000                       0                    15  
+    GTYE4_CHANNEL_TXOUTCLKPCS[2]_1                         1.327        0.000                      0                   34        0.106        0.000                      0                   34        1.005        0.000                       0                    15  
+    GTYE4_CHANNEL_TXOUTCLKPCS[3]_1                         1.051        0.000                      0                   34        0.096        0.000                      0                   34        1.005        0.000                       0                    15  
+    rxoutclk_out[0]_1                                      0.076        0.000                      0                 4906        0.017        0.000                      0                 4906        0.078        0.000                       0                  2640  
+    txoutclk_out[0]_1                                      0.047        0.000                      0                26043        0.019        0.000                      0                26043        0.078        0.000                       0                 13408  
+pll_ref_clk                                                                                                                                                                                            3.125        0.000                       0                     1  
+  clkfbout_x420_ps_rfdc_bd_data_clock_mmcm_0                                                                                                                                                          14.126        0.000                       0                     3  
+  pll_ref_clk_out_x420_ps_rfdc_bd_data_clock_mmcm_0        2.926        0.000                      0                 2993        0.025        0.000                      0                 2993        3.812        0.000                       0                  1745  
+  r0_rfdc_clk_x420_ps_rfdc_bd_data_clock_mmcm_0            0.016        0.000                      0               102213        0.012        0.000                      0               102213        0.762        0.000                       0                 28275  
+  r1_rfdc_clk_x420_ps_rfdc_bd_data_clock_mmcm_0            0.059        0.000                      0               100708        0.007        0.000                      0               100708        0.762        0.000                       0                 27467  
+ref_clk                                                    0.083        0.000                      0                  216        0.041        0.000                      0                  214       16.000        0.000                       0                   163  
+
+
+------------------------------------------------------------------------------------------------
+| Inter Clock Table
+| -----------------
+------------------------------------------------------------------------------------------------
+
+From Clock                                         To Clock                                               WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints  
+----------                                         --------                                               -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------  
+r0_rfdc_clk_x420_ps_rfdc_bd_data_clock_mmcm_0      async_out_clk                                           48.248        0.000                      0                    1        0.251        0.000                      0                    1  
+ref_clk                                            async_out_clk                                           43.320        0.000                      0                    1        3.178        0.000                      0                    1  
+clk40                                              clk200                                                  24.291        0.000                      0                  120                                                                        
+txoutclk_out[0]                                    clk200                                                   1.450        0.000                      0                  144                                                                        
+txoutclk_out[0]_1                                  clk200                                                   1.337        0.000                      0                  144                                                                        
+r0_rfdc_clk_x420_ps_rfdc_bd_data_clock_mmcm_0      clk200                                                   2.419        0.000                      0                  105                                                                        
+r1_rfdc_clk_x420_ps_rfdc_bd_data_clock_mmcm_0      clk200                                                   2.349        0.000                      0                  105                                                                        
+clk200                                             clk40                                                    4.353        0.000                      0                  120                                                                        
+r0_rfdc_clk_x420_ps_rfdc_bd_data_clock_mmcm_0      clk40                                                    2.488        0.000                      0                   42                                                                        
+r1_rfdc_clk_x420_ps_rfdc_bd_data_clock_mmcm_0      clk40                                                    2.007        0.000                      0                   42                                                                        
+clk200                                             txoutclk_out[0]                                          3.733        0.000                      0                  144                                                                        
+clk200                                             txoutclk_out[0]_1                                        3.815        0.000                      0                  144                                                                        
+pll_ref_clk_out_x420_ps_rfdc_bd_data_clock_mmcm_0  pll_ref_clk                                              0.440        0.000                      0                   28        0.129        0.000                      0                   28  
+pll_ref_clk                                        pll_ref_clk_out_x420_ps_rfdc_bd_data_clock_mmcm_0        0.010        0.000                      0                   20        0.216        0.000                      0                   20  
+r0_rfdc_clk_x420_ps_rfdc_bd_data_clock_mmcm_0      pll_ref_clk_out_x420_ps_rfdc_bd_data_clock_mmcm_0        0.385        0.000                      0                   80        0.107        0.000                      0                   80  
+r1_rfdc_clk_x420_ps_rfdc_bd_data_clock_mmcm_0      pll_ref_clk_out_x420_ps_rfdc_bd_data_clock_mmcm_0        0.521        0.000                      0                   56        0.100        0.000                      0                   56  
+ref_clk                                            pll_ref_clk_out_x420_ps_rfdc_bd_data_clock_mmcm_0        2.775        0.000                      0                    1        2.182        0.000                      0                    1  
+clk200                                             r0_rfdc_clk_x420_ps_rfdc_bd_data_clock_mmcm_0            3.688        0.000                      0                  105                                                                        
+clk40                                              r0_rfdc_clk_x420_ps_rfdc_bd_data_clock_mmcm_0            8.732        0.000                      0                   48                                                                        
+pll_ref_clk_out_x420_ps_rfdc_bd_data_clock_mmcm_0  r0_rfdc_clk_x420_ps_rfdc_bd_data_clock_mmcm_0            0.409        0.000                      0                   44        0.135        0.000                      0                   44  
+r1_rfdc_clk_x420_ps_rfdc_bd_data_clock_mmcm_0      r0_rfdc_clk_x420_ps_rfdc_bd_data_clock_mmcm_0            0.838        0.000                      0                   27        0.107        0.000                      0                   27  
+clk200                                             r1_rfdc_clk_x420_ps_rfdc_bd_data_clock_mmcm_0            4.155        0.000                      0                  105                                                                        
+clk40                                              r1_rfdc_clk_x420_ps_rfdc_bd_data_clock_mmcm_0            8.772        0.000                      0                   48                                                                        
+pll_ref_clk_out_x420_ps_rfdc_bd_data_clock_mmcm_0  r1_rfdc_clk_x420_ps_rfdc_bd_data_clock_mmcm_0            0.476        0.000                      0                   39        0.128        0.000                      0                   39  
+r0_rfdc_clk_x420_ps_rfdc_bd_data_clock_mmcm_0      r1_rfdc_clk_x420_ps_rfdc_bd_data_clock_mmcm_0            0.417        0.000                      0                   86        0.087        0.000                      0                   86  
+clk40                                              virtual_ref_clk                                         24.178        0.000                      0                    1        1.208        0.000                      0                    1  
+ref_clk                                            virtual_ref_clk                                         27.596        0.000                      0                    1        1.663        0.000                      0                    1  
+
+
+------------------------------------------------------------------------------------------------
+| Other Path Groups Table
+| -----------------------
+------------------------------------------------------------------------------------------------
+
+Path Group                                     From Clock                                     To Clock                                           WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints  
+----------                                     ----------                                     --------                                           -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------  
+**async_default**                              clk200                                         clk200                                               2.189        0.000                      0                 9977        0.050        0.000                      0                 9977  
+**async_default**                              clk40                                          clk40                                               19.977        0.000                      0                 2122        0.098        0.000                      0                 2122  
+**async_default**                              r0_rfdc_clk_x420_ps_rfdc_bd_data_clock_mmcm_0  r0_rfdc_clk_x420_ps_rfdc_bd_data_clock_mmcm_0        0.302        0.000                      0                 2012        0.108        0.000                      0                 2012  
+**async_default**                              r1_rfdc_clk_x420_ps_rfdc_bd_data_clock_mmcm_0  r1_rfdc_clk_x420_ps_rfdc_bd_data_clock_mmcm_0        1.190        0.000                      0                 1976        0.110        0.000                      0                 1976  
+**async_default**                              rxoutclk_out[0]                                rxoutclk_out[0]                                      1.766        0.000                      0                    8        0.161        0.000                      0                    8  
+**async_default**                              rxoutclk_out[0]_1                              rxoutclk_out[0]_1                                    1.883        0.000                      0                    8        0.139        0.000                      0                    8  
+**async_default**                              txoutclk_out[0]                                txoutclk_out[0]                                      0.918        0.000                      0                  612        0.086        0.000                      0                  612  
+**async_default**                              txoutclk_out[0]_1                              txoutclk_out[0]_1                                    0.632        0.000                      0                  612        0.110        0.000                      0                  612  
+
+
