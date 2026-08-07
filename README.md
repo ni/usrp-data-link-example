@@ -278,7 +278,7 @@ host computer.
 
 ### Load the Aurora FPGA Image
 <p>
-Download the FPGA images from /fpga-images and use the following command to
+Download the FPGA images from <strong>/fpga-images</strong> and use the following command to
 flash it onto the USRP. Replace the placeholders with the appropriate IP
 address and the path to the bitfile:
 </p>
