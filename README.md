@@ -330,6 +330,10 @@ For the X420/X440 and PXIe-7903, use one or two Mini-SAS zHD–QSFP28 HSS Cables
 <p align="center"> <img src="figures/x4xx-7903-connection.PNG" alt="X4xx connection with 7903" width="460" /> </p>
 
 
+# Modem Examples
+<a href="Pulsed Binary Phase Shift Keying (BPSK) Modem Examples">  - Pulsed Binary Phase Shift Keying (BPSK) modulation is modulation scheme in which a +1 is mapped to one complex symbol while a -1 is mapped to a different complex symbol.https://www.ni.com/docs/en-US/bundle/ni-data-link-test-framework/page/pbpsk-modem.html
+Shaped Offset Quadrature Phase Shift Keying (SOQPSK) Modem Examples - Shaped Offset Quadrature Phase Shift Keying (SOQPSK) modulation is generated using a frequency modulator.
+
 # Directories
 
 ### host-example/
