@@ -86,4 +86,10 @@ Click <strong>Start USRP Generation</strong> to begin transmit-side streaming.
 <li>
 Click <strong>Start USRP Acquisition</strong> to begin receive-side streaming.
 </li>
+<li>
+Click <strong>Stop USRP Generation</strong> to stop transmit-side streaming.
+</li>
+<li>
+Click <strong>Stop USRP Acquisition</strong> to stop receive-side streaming.
+</li>
 </ol>
