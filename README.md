@@ -328,3 +328,15 @@ For the X420/X440 and PXIe-7903, use one or two Mini-SAS zHD–QSFP28 HSS Cables
 </blockquote>
 
 <p align="center"> <img src="figures/x4xx-7903-connection.PNG" alt="X4xx connection with 7903" width="460" /> </p>
+
+
+# Directories
+
+### host-example/
+This directory contains host-side application examples that demonstrate how to control USRP devices and run modem implementations using Pulsed BPSK and SOQPSK modulation and demodulation schemes.
+
+### fpga-examples/
+This directory contains the FPGA source code for the modem examples. To open, modify, or build these projects, NI Data Link Test Framework must be installed on the development system.
+
+### fpga-images/
+This directory contains FPGA image packages for supported USRP platforms and the FPGA bitfiles required to run the Pulsed BPSK and SOQPSK modem example applications.
