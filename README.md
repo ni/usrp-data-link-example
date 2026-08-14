@@ -1,4 +1,4 @@
-# USRP Data Link Test Framework
+# USRP Data Link Example
 
 NI Data Link Test Framework (DLTF) is a software framework designed to simplify the creation, configuration, and control of high-speed Multi-Gigabit Transceiver (MGT) data streaming links between FPGA-based NI hardware devices. It is primarily used in real-time Hardware-in-the-Loop (HIL) and Digital Signal Processing (DSP) applications where extremely high data throughput is required.
 This repository contains the architecture and example code demonstrating how to integrate a USRP with the Data Link Test Framework. It uses the USRP Aurora FPGA bitfile to establish a high-speed data link with an NI High-Speed Serial coprocessor, enabling efficient I/Q data streaming and seamless integration of USRP-based systems into DLTF-powered HIL, DSP, and communications test environments.
