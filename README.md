@@ -80,11 +80,11 @@ Install the NI Data Link Test Framework, LabVIEW, and drivers on a PXI controlle
 </tr>
 <tr>
 <td>LabVIEW (64-bit)</td>
-<td>2023 Q3 or later</td>
+<td>2025 Q3 or later</td>
 </tr>
 <tr>
 <td>LabVIEW FPGA Module (64-bit)</td>
-<td>2023 Q3 or later</td>
+<td>2025 Q3 or later</td>
 </tr>
 <tr>
 <td>LabVIEW FPGA Compilation Tool for Vivado 2021.1</td>
@@ -92,7 +92,7 @@ Install the NI Data Link Test Framework, LabVIEW, and drivers on a PXI controlle
 </tr>
 <tr>
 <td>PXI Platform Services</td>
-<td>2023 Q3 or later</td>
+<td>2025 Q3 or later</td>
 </tr>
 <tr>
 <td>FlexRIO for Integrated I/O</td>
@@ -104,7 +104,7 @@ Install the NI Data Link Test Framework, LabVIEW, and drivers on a PXI controlle
 </tr>
 <tr>
 <td>USRP Hardware Driver (UHD)</td>
-<td>4.10</td>
+<td>4.10 or later</td>
 </tr>
 <tr>
 <td>Python</td>
