@@ -330,7 +330,10 @@ For the X420/X440 and PXIe-7903, use one or two Mini-SAS zHD–QSFP28 HSS Cables
 <p align="center"> <img src="figures/x4xx-7903-connection.PNG" alt="X4xx connection with 7903" width="460" /> </p>
 
 ## IQ Imbalance and DC Offset Correction Utilities - X420 Only
+<p>
 UHD installs the uhd_iq_dc_correction.py utility into <Python path>/site-packages/uhd/utils/. In addition to the requirements of UHD, this script requires the Python packages scipy and tqdm. As with the other calibration utilities, it is recommended to disconnect any external signals from the RF antenna ports before running the utility and to let the device warm up for a few minutes. By default, the utility will perform an RX IQ imbalance and DC Offset correction only. By adding the --tx argument, TX IQ imbalance and DC offset corrections can be enabled as well. The utility will take several minutes to complete. See the output given by --help for more advanced options, such as manually choosing the frequency range and step size for the sweeps or switching to a different than the default master clock rate.
+</p>
+<pre><code>python uhd_iq_dc_correction.py --args=<device args> -c <chan> --tx --sample_rate=<rate></code></pre>
 
 
 # Modem Examples
