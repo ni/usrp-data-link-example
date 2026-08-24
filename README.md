@@ -336,7 +336,11 @@ UHD installs the <strong>uhd_iq_dc_correction.py</strong> utility into Python_pa
 python -m pip install tqdm</pre></code>
 </p>
 <p>
-As with the other calibration utilities, it is recommended to disconnect any external signals from the RF antenna ports before running the utility and to let the device warm up for a few minutes. By default, the utility will perform an RX IQ imbalance and DC Offset correction only. By adding the --tx argument, TX IQ imbalance and DC offset corrections can be enabled as well. The utility will take several minutes to complete. See the output given by --help for more advanced options, such as manually choosing the frequency range and step size for the sweeps or switching to a different than the default master clock rate.
+As with the other calibration utilities, it is recommended to disconnect any external signals from the RF antenna ports before running the utility and to let the device warm up for a few minutes. By default, the utility will perform an RX IQ imbalance and DC Offset correction only. 
+The calibration utility should be run by loading X420_X4_1000 image:
+</p>
+<pre><code>uhd_image_loader --args "type=x4xx,addr=&lt;IP address of device&gt;" --fpga-path &lt;path_to_bit&gt;</code></pre>
+By adding the --tx argument, TX IQ imbalance and DC offset corrections can be enabled as well. The utility will take several minutes to complete. See the output given by --help for more advanced options, such as manually choosing the frequency range and step size for the sweeps or switching to a different than the default master clock rate.
 </p>
 <pre><code>python uhd_iq_dc_correction.py --args="device args" -c "chan" --tx --sample_rate="rate" --rj45 </code></pre>
 
