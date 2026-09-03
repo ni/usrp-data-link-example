@@ -5,7 +5,7 @@ This repository contains the architecture and example code demonstrating how to 
 
 ## Key Features
 
-The NI USRP Data Link Test Framework provides the following features and capabilities:
+The NI Data Link Test Framework provides the following USRP-enabled features and capabilities:
 - I/Q data streaming between supported devices up to **1.25 GS/s per channel** (1 GHz instantaneous bandwidth) per direction.
 - Support for multichannel streaming of supported USRP devices.
 - Support for multiple streaming endpoints on a PXIe-7903 coprocessor.
@@ -146,7 +146,7 @@ Download the Python 3.12 Windows installer (.exe) from the official <a href="htt
 <li>
   Run the installer and enable the following options:
 <ul>
-<li>Add Python to PATH</li>
+<li>Add Python to <strong>PATH</strong></li>
 <li>Install for all users (recommended)</li>
 </ul>
 </li>
@@ -155,7 +155,7 @@ Verify that the Python installation directory has been added to the user
 <strong>PATH</strong> environment variable.
 </li>
 <li>
-If Python was not added automatically, manually add the following directories to the user PATH. Typical locations are:
+If Python was not added automatically, manually add the following directories to the user <strong>PATH</strong>. Typical locations are:
 <pre><code>C:\Users\username\AppData\Local\Programs\Python\Python312\
 C:\Users\username\AppData\Local\Programs\Python\Python312\Scripts\</code></pre>
 </li>
