@@ -7939,7 +7939,7 @@ LaneUpNumberOfSyncRegistersForReadInProject=0;resource=/IO Socket/SignalList/Por
 				</Item>
 			</Item>
 			<Item Name="SOQPSK Modem.vi" Type="VI" URL="../SOQPSK Modem.vi">
-				<Property Name="BuildSpec" Type="Str">{20527D14-85BD-404F-9F29-0861F2FC021A}</Property>
+				<Property Name="BuildSpec" Type="Str">{19424878-3A47-4B1A-A1F5-5F75B16B4831}</Property>
 				<Property Name="configString.guid" Type="Str">{007E90A5-D974-4D94-B3C0-D9928B5AEF23}ArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=0;resource=/IO Socket/SignalList/Port9.DrpChAxi.WValid;0;WriteMethodType=bool{00F2D748-A7A4-4B0E-9A2E-BB25667182B3}NumberOfSyncRegistersForReadInProject=Auto;resource=/Routing/SignalList/Clip Identity;0;ReadMethodType=
 &lt;Type&gt;
    &lt;FXP&gt;
@@ -11142,7 +11142,7 @@ LaneUpNumberOfSyncRegistersForReadInProject=0;resource=/IO Socket/SignalList/Por
       &lt;WordLength&gt;4&lt;/WordLength&gt;
    &lt;/FXP&gt;
 &lt;/Type&gt;WValidArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=0;resource=/IO Socket/SignalList/Port8.CtrlAxi.WValid;0;WriteMethodType=boolWValidArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=0;resource=/IO Socket/SignalList/Port8.DrpChAxi.WValid;0;WriteMethodType=boolWValidArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=0;resource=/IO Socket/SignalList/Port9.CtrlAxi.WValid;0;WriteMethodType=boolWValidArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=0;resource=/IO Socket/SignalList/Port9.DrpChAxi.WValid;0;WriteMethodType=bool</Property>
-				<Property Name="NI.LV.FPGA.InterfaceBitfile" Type="Str">C:\Users\Public\Data Link Test Framework\usrp_soqpsk_modem_dmsc_7903_07.lvbitx</Property>
+				<Property Name="NI.LV.FPGA.InterfaceBitfile" Type="Str">C:\Users\Administrator\Desktop\usrp-data-link-example\fpga-images\7903\usrp_soqpsk_modem_dmsc_7903_07.lvbitx</Property>
 			</Item>
 			<Item Name="DRAM Bank 0" Type="FPGA Component Level IP">
 				<Property Name="FPGA.PersistentID" Type="Str">{9883FE74-9D0B-445F-93A0-72654E707867}</Property>
@@ -15550,11 +15550,11 @@ LaneUpNumberOfSyncRegistersForReadInProject=0;resource=/IO Socket/SignalList/Por
 					<Property Name="Comp.Xilinx.SynthEffort" Type="Str">normal</Property>
 					<Property Name="Comp.Xilinx.SynthGoal" Type="Str">speed</Property>
 					<Property Name="Comp.Xilinx.UseRecommended" Type="Bool">true</Property>
-					<Property Name="DefaultBuildSpec" Type="Bool">false</Property>
-					<Property Name="DestinationDirectory" Type="Path">/C/Users/Public/Data Link Test Framework</Property>
-					<Property Name="NI.LV.FPGA.LastCompiledBitfilePath" Type="Path">/C/Users/Public/Data Link Test Framework/usrp_soqpsk_modem_dmsc_7903_07.lvbitx</Property>
+					<Property Name="DefaultBuildSpec" Type="Bool">true</Property>
+					<Property Name="DestinationDirectory" Type="Path">/C/Users/Administrator/Desktop/usrp-data-link-example/fpga-images/7903</Property>
+					<Property Name="NI.LV.FPGA.LastCompiledBitfilePath" Type="Path">/C/Users/Administrator/Desktop/usrp-data-link-example/fpga-images/7903/usrp_soqpsk_modem_dmsc_7903_07.lvbitx</Property>
 					<Property Name="NI.LV.FPGA.LastCompiledBitfilePathRelativeToProject" Type="Path"></Property>
-					<Property Name="ProjectPath" Type="Path">/C/Users/Administrator/Desktop/Ararat/modem-examples/SOQPSK/FPGA/SOQPSK Modem dmsc_7903_07.lvproj</Property>
+					<Property Name="ProjectPath" Type="Path">/C/Users/Administrator/Desktop/usrp-data-link-example/fpga-examples/modem-fpga-examples/SOQPSK/SOQPSK Modem dmsc_7903_07.lvproj</Property>
 					<Property Name="RelativePath" Type="Bool">false</Property>
 					<Property Name="RunWhenLoaded" Type="Bool">false</Property>
 					<Property Name="SupportDownload" Type="Bool">true</Property>

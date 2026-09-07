@@ -12236,6 +12236,7 @@ LaneUpNumberOfSyncRegistersForReadInProject=0;resource=/IO Socket/SignalList/Por
 				</Item>
 			</Item>
 			<Item Name="Pulsed BPSK Modem.vi" Type="VI" URL="../Pulsed BPSK Modem.vi">
+				<Property Name="BuildSpec" Type="Str">{B9AE57ED-0039-435D-8C89-666632BD2D5D}</Property>
 				<Property Name="configString.guid" Type="Str">{00C0DBED-963B-45B9-ABEA-2A9DBEAE4CA8}NumberOfSyncRegistersForReadInProject=Auto;resource=/Routing/SignalList/Destination19;0;ReadMethodType=bool{0205A366-B16D-435B-B867-4B9164A971DA}ArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=0;resource=/IO Socket/SignalList/Port8.Nfc.TValid;0;WriteMethodType=bool{0410721B-3E22-49E0-B72A-CF383B70111F}NumberOfSyncRegistersForReadInProject=0;resource=/IO Socket/SignalList/Port9.Rx.TData3;0;ReadMethodType=
 &lt;Type&gt;
    &lt;FXP&gt;
@@ -15438,8 +15439,9 @@ LaneUpNumberOfSyncRegistersForReadInProject=0;resource=/IO Socket/SignalList/Por
       &lt;WordLength&gt;4&lt;/WordLength&gt;
    &lt;/FXP&gt;
 &lt;/Type&gt;WValidArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=0;resource=/IO Socket/SignalList/Port8.CtrlAxi.WValid;0;WriteMethodType=boolWValidArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=0;resource=/IO Socket/SignalList/Port8.DrpChAxi.WValid;0;WriteMethodType=boolWValidArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=0;resource=/IO Socket/SignalList/Port9.CtrlAxi.WValid;0;WriteMethodType=boolWValidArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=0;resource=/IO Socket/SignalList/Port9.DrpChAxi.WValid;0;WriteMethodType=bool</Property>
-				<Property Name="NI.LV.FPGA.InterfaceBitfile" Type="Str">C:\Users\Administrator\Desktop\Ararat\modem-examples\Pulsed BPSK\FPGA\FPGA Bitfiles\usrp_pulsed_bpsk_modem_dmsc_7903_07.lvbitx</Property>
+				<Property Name="NI.LV.FPGA.InterfaceBitfile" Type="Str">C:\Users\Administrator\Desktop\usrp-data-link-example\fpga-images\7903\usrp_pulsed_bpsk_modem_dmsc_7903_07.lvbitx</Property>
 			</Item>
+			<Item Name="Modems Shared.lvlib" Type="Library" URL="../../../../../../../../Program Files/NI/LVAddons/dltf/1/examples/Data Link Test Framework/Modems/Shared/Modems Shared.lvlib"/>
 			<Item Name="Dependencies" Type="Dependencies"/>
 			<Item Name="Build Specifications" Type="Build">
 				<Item Name="usrp_pulsed_bpsk_modem_dmsc_7903_07" Type="{F4C5E96F-7410-48A5-BB87-3559BC9B167F}">
@@ -15468,12 +15470,12 @@ LaneUpNumberOfSyncRegistersForReadInProject=0;resource=/IO Socket/SignalList/Por
 					<Property Name="Comp.Xilinx.SynthEffort" Type="Str">normal</Property>
 					<Property Name="Comp.Xilinx.SynthGoal" Type="Str">speed</Property>
 					<Property Name="Comp.Xilinx.UseRecommended" Type="Bool">true</Property>
-					<Property Name="DefaultBuildSpec" Type="Bool">false</Property>
-					<Property Name="DestinationDirectory" Type="Path">FPGA Bitfiles</Property>
-					<Property Name="NI.LV.FPGA.LastCompiledBitfilePath" Type="Path">/C/Users/Administrator/Desktop/Ararat/modem-examples/Pulsed BPSK/FPGA/FPGA Bitfiles/usrp_pulsed_bpsk_modem_dmsc_7903_07.lvbitx</Property>
-					<Property Name="NI.LV.FPGA.LastCompiledBitfilePathRelativeToProject" Type="Path">FPGA Bitfiles/usrp_pulsed_bpsk_modem_dmsc_7903_07.lvbitx</Property>
-					<Property Name="ProjectPath" Type="Path">/C/Users/Administrator/Desktop/Ararat/modem-examples/Pulsed BPSK/FPGA/Pulsed BPSK Modem dmsc_7903_07.lvproj</Property>
-					<Property Name="RelativePath" Type="Bool">true</Property>
+					<Property Name="DefaultBuildSpec" Type="Bool">true</Property>
+					<Property Name="DestinationDirectory" Type="Path">/C/Users/Administrator/Desktop/usrp-data-link-example/fpga-images/7903</Property>
+					<Property Name="NI.LV.FPGA.LastCompiledBitfilePath" Type="Path">/C/Users/Administrator/Desktop/usrp-data-link-example/fpga-images/7903/usrp_pulsed_bpsk_modem_dmsc_7903_07.lvbitx</Property>
+					<Property Name="NI.LV.FPGA.LastCompiledBitfilePathRelativeToProject" Type="Path"></Property>
+					<Property Name="ProjectPath" Type="Path">/C/Users/Administrator/Desktop/usrp-data-link-example/fpga-examples/modem-fpga-examples/Pulsed BPSK/Pulsed BPSK Modem dmsc_7903_07.lvproj</Property>
+					<Property Name="RelativePath" Type="Bool">false</Property>
 					<Property Name="RunWhenLoaded" Type="Bool">false</Property>
 					<Property Name="SupportDownload" Type="Bool">true</Property>
 					<Property Name="SupportResourceEstimation" Type="Bool">false</Property>
