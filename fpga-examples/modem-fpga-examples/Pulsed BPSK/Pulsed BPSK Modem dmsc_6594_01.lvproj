@@ -16893,6 +16893,7 @@ Modulated Data 8 spc.0"ControlLogic=0;NumberOfElements=1023;Type=2;ReadArbs=Arbi
       &lt;WordLength&gt;32&lt;/WordLength&gt;
    &lt;/FXP&gt;
 &lt;/Type&gt;uPort1_s_axi_tx_tlastArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=0;resource=/IO Socket/SignalList/uPort1_s_axi_tx_tlast;0;WriteMethodType=booluPort1_s_axi_tx_treadyNumberOfSyncRegistersForReadInProject=0;resource=/IO Socket/SignalList/uPort1_s_axi_tx_tready;0;ReadMethodType=booluPort1_s_axi_tx_tvalidArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=0;resource=/IO Socket/SignalList/uPort1_s_axi_tx_tvalid;0;WriteMethodType=booluPort1_SoftErrorNumberOfSyncRegistersForReadInProject=0;resource=/IO Socket/SignalList/uPort1_SoftError;0;ReadMethodType=booluPort1_sys_reset_outNumberOfSyncRegistersForReadInProject=0;resource=/IO Socket/SignalList/uPort1_sys_reset_out;0;ReadMethodType=boolxIoModuleErrorCodeNumberOfSyncRegistersForReadInProject=0;resource=/IO Socket/SignalList/xIoModuleErrorCode;0;ReadMethodType=I32xIoModuleReadyNumberOfSyncRegistersForReadInProject=0;resource=/IO Socket/SignalList/xIoModuleReady;0;ReadMethodType=boolxIoPort0ModPresentNumberOfSyncRegistersForReadInProject=0;resource=/IO Socket/SignalList/xIoPort0ModPresent;0;ReadMethodType=boolxIoPort1ModPresentNumberOfSyncRegistersForReadInProject=0;resource=/IO Socket/SignalList/xIoPort1ModPresent;0;ReadMethodType=bool</Property>
+				<Property Name="NI.LV.FPGA.InterfaceBitfile" Type="Str">C:\Users\Administrator\Desktop\usrp-data-link-example\fpga-images\6594\usrp_pulsed_bpsk_modem_dmsc_6594_01.lvbitx</Property>
 			</Item>
 			<Item Name="Dependencies" Type="Dependencies"/>
 			<Item Name="Build Specifications" Type="Build">
@@ -16924,6 +16925,8 @@ Modulated Data 8 spc.0"ControlLogic=0;NumberOfElements=1023;Type=2;ReadArbs=Arbi
 					<Property Name="Comp.Xilinx.UseRecommended" Type="Bool">true</Property>
 					<Property Name="DefaultBuildSpec" Type="Bool">true</Property>
 					<Property Name="DestinationDirectory" Type="Path">/C/Users/Administrator/Desktop/usrp-data-link-example/fpga-images/6594</Property>
+					<Property Name="NI.LV.FPGA.LastCompiledBitfilePath" Type="Path">/C/Users/Administrator/Desktop/usrp-data-link-example/fpga-images/6594/usrp_pulsed_bpsk_modem_dmsc_6594_01.lvbitx</Property>
+					<Property Name="NI.LV.FPGA.LastCompiledBitfilePathRelativeToProject" Type="Path"></Property>
 					<Property Name="ProjectPath" Type="Path">/C/Users/Administrator/Desktop/usrp-data-link-example/fpga-examples/modem-fpga-examples/Pulsed BPSK/Pulsed BPSK Modem dmsc_6594_01.lvproj</Property>
 					<Property Name="RelativePath" Type="Bool">false</Property>
 					<Property Name="RunWhenLoaded" Type="Bool">false</Property>
