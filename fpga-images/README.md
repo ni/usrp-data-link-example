@@ -4,8 +4,8 @@
 Download the FPGA bitfile from the appropriate directory and use the following command to flash it onto the USRP.
 </p>
 <ul>
-<li>For <strong>X420</strong>, use the /x420 directory.</li>
-<li>For <strong>X440</strong>, use the /x440 directory.</li>
+<li>For <strong>X420</strong>, use the <code>/x420</code> directory.</li>
+<li>For <strong>X440</strong>, use the <code>/x440</code> directory.</li>
 </ul>
 <p>
 Replace the placeholders with the appropriate IP address and the path to the bitfile:
