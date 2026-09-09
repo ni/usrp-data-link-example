@@ -360,22 +360,11 @@ Pulsed Binary Phase Shift Keying (BPSK) modulation is a modulation scheme in whi
 <p>
 Shaped Offset Quadrature Phase Shift Keying (SOQPSK) modulation is generated using a frequency modulator.
 </p>
-<p>
+
 The LabVIEW examples contained in this repo rely on libraries included in DLTF's modem examples. To ensure links are managed correctly in this repo's example VIs, one of the following options should be done:
-</p>
-<ul>
-<li> 
-  (Recommended) Clone this repo to: <code>C:\Users\\\<user_name>\git</code> </li>
-</li>
-<ul>
-<li>     
-    Add <code>C:\Program Files\NI\LVAddons\dltf\1\examples\Data Link Test Framework\Modems\*</code> to your VI Search Path list for LabVIEW </li>
-</li>
-  <ul>
-<li>
-  Clone or copy this repo's contents to a location nested three folders beneath the drive that your LabVIEW application is installed to </li>
-</ul>
-</ul>
+- (Recommended) Clone this repo to: <code>C:\Users\\\<user_name>\git</code>
+- Add <code>C:\Program Files\NI\LVAddons\dltf\1\examples\Data Link Test Framework\Modems\*</code> to your VI Search Path list for LabVIEW
+- Clone or copy this repo's contents to a location nested three folders beneath the drive that your LabVIEW application is installed to
   
 # Directories
 
