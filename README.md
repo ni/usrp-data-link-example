@@ -21,6 +21,13 @@ The NI Data Link Test Framework provides the following USRP-enabled features and
 - [NI Data Link Test Framework User Manual](https://www.ni.com/docs/en-US/bundle/ni-data-link-test-framework/page/user-manual-welcome.html)
 - [RFNoC Aurora Block](https://github.com/EttusResearch/rfnoc-oot-blocks/blob/main/rfnoc/fpga/oot-blocks/rfnoc_block_aurora/docs/RFNoC_block_Aurora_manual.md)
 
+## Using This Example
+
+The LabVIEW examples contained in this repo rely on libraries included in DLTF's modem examples. To ensure links are managed correctly in this repo's example VIs, one of the following options should be done:
+- (Recommended) Clone this repo to: <code>C:\Users\\\<user_name>\git</code>
+- Add <code>C:\Program Files\NI\LVAddons\dltf\1\examples\Data Link Test Framework\Modems\*</code> to your VI Search Path list for LabVIEW
+- Clone or copy this repo's contents to a location nested three folders beneath the drive that your LabVIEW application is installed to
+
 ## System Requirements and Supported Operating Systems
 
 NI Data Link Test Framework has the following requirements:
