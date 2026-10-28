@@ -123,7 +123,7 @@ Install the NI Data Link Test Framework, LabVIEW, and drivers on a PXI controlle
 
 <ol>
 <li>
-Download the UHD installer from the Ettus Research download <a href="https://files.ettus.com/binaries/uhd/uhd_004.010.000.000-release/">page</a>.
+Download the UHD installer from the Ettus Research download <a href="https://files.ettus.com/#/binaries/uhd/uhd_004.010.000.000-release/Windows11/">page</a>.
 </li>
 <li>
 Run the installer and, when prompted, select the option to add UHD to the system
