@@ -246,7 +246,7 @@ update mechanism to ensure compatibility between the host software and the USRP 
 </p>
 <ol>
 <li>
-Download the <a href="INSERT_MENDER_FILE_LINK_HERE">mender file
+Download the <a href="https://files.ettus.com/#/binaries/cache/x4xx/meta-ettus-v4.10.0.0">mender file
 <li>
 Transfer the file from your host computer to the USRP using the following command,
 replacing the placeholders with the appropriate file path and IP address:
